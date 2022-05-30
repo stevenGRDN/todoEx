@@ -29,10 +29,10 @@ window.addEventListener('load', () => {
 
 
   
-  var shoppingPRBLM = 30;
+//   var shoppingPRBLM = 30;
 
 
-  localStorage.setItem('shopping', shoppingPRBLM);
+  localStorage.setItem('shopping', "COOK COOK");
   
   const form = document.querySelector("#new-task-form");
   const input = document.querySelector("#routine-input");
