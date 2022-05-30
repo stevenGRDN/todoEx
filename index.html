@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="light-mode">
+  <div class="form">
+
+  </div>
+  </div>
+
+
+  <!-- <div class="box1"></div> -->
+  <input type="checkbox" id="cbox" name="" value="">
+
+  <div class="container">
+    <div class="left-side">
+      <input type="radio" id="l-routine" name="left-select" value="routine" checked="true">
+      <input type="radio" id="l-setting" name="left-select" value="settings">
+      <div class="l-top-icons">
+        <div class="new-routine-icon">
+          <div class="l-icon">
+            <div class="plus-icon">
+              <div class="plus-h"></div>
+              <div class="plus-v"></div>
+            </div>
+            <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <style type="text/css">
+              	.st0{fill:#3484F0;}
+              </style>
+              <path class="st0" d="M246.44,222.25c47.61-61.43,109.89-115.56,206.19-146.15c6.8-2.27,6.8,5.66,6.8,9.06s3.4,67.97-23.79,89.5
+              	s-106.49,45.32-109.89,46.45c-3.4,1.13-9.06,3.4-9.06,7.93s12.46,10.2,24.92,6.8c12.46-3.4,33.13-5.3,34.13,0.75
+              	c0.99,6.05-11.62,16.24-26.84,25.31c-15.22,9.06-34.48,21.53-52.61,26.06s-24.92,0-27.19,3.4c-2.27,3.4-38.52,38.52-63.44,74.77
+              	c-25.29,36.79-36.99,59.8-39.65,69.11c-2.27,7.93-4.53,14.73-9.06,14.73c-5.66,0-5.66-5.66-5.66-11.33c0-5.66,6.8-40.78,21.53-79.3
+              	C187.67,320.43,211.32,267.57,246.44,222.25z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="settings-icon">
+          <div class="r-icon">
+            <div class="t-line-l"></div>
+            <div class="t-circle-l"></div>
+            <div class="t-line-r"></div>
+            <div class="b-line-l"></div>
+            <div class="b-circle-r"></div>
+            <div class="b-line-r"></div>
+
+          </div>
+          <!-- <div class="dark-mode"></div> -->
+        </div>
+        <div id="dot-select" class="preload dot-selected">
+
+      </div>
+      </div>
+      <div class="l-container">
+        <div class="l-new-routine">
+          <form id="new-task-form">
+
+            <div class="name-inp inp">
+              <div class="name-icon div-icon">
+                  <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                    <style type="text/css">
+                    .st0{fill:#3484F0;}
+                    </style>
+                    <path class="st0" d="M236,112v124H20V20h129.5V0H12C5.4,0,0,5.4,0,12v232c0,6.6,5.4,12,12,12h232c6.6,0,12-5.4,12-12V112H236z"/>
+                    <g>
+                      <path class="st0" d="M192.4,39.07l26.9,26.9l-96.09,96.09l-32.24,6.01l5.5-33.07L192.4,39.07 M192.4,9.37L76.85,124.92l-9.92,59.66
+                      c-0.71,4.25,2.62,7.97,6.73,7.97c0.42,0,0.85-0.04,1.28-0.12l58.51-10.91L249,65.98L192.4,9.37L192.4,9.37z"/>
+                    </g>
+                  </svg>
+              </div>
+              <input type="text" id="routine-input" autocomplete="off" placeholder="Name" value="">
+
+            </div>
+            <div class="color-inp inp">
+              <div class="color-icon div-icon">
+                <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st6{fill:#3484F0;}
+                  	.st7{fill:#A8C7F0;}
+                  </style>
+                  <g>
+                  	<circle class="st6" cx="89.16" cy="128" r="89.16"/>
+                  </g>
+                  <g>
+                  	<circle class="st7" cx="166.84" cy="128" r="89.16"/>
+                  </g>
+                </svg>
+              </div>
+              <input type="text" id="routine-colour-input" autocomplete="off" placeholder="Block colour" value="">
+
+
+            </div>
+            <div class="amount-inp inp">
+              <div class="amount-icon div-icon">
+                <svg version="1.1" id="Layer_2_copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#3484F0;}
+                  </style>
+                  <g>
+                  	<path class="st0" d="M128,20c28.85,0,55.97,11.23,76.37,31.63S236,99.15,236,128s-11.23,55.97-31.63,76.37S156.85,236,128,236
+                  		s-55.97-11.23-76.37-31.63S20,156.85,20,128s11.23-55.97,31.63-76.37S99.15,20,128,20 M128,0C57.31,0,0,57.31,0,128
+                  		s57.31,128,128,128s128-57.31,128-128S198.69,0,128,0L128,0z"/>
+                  </g>
+                  <path class="st0" d="M124,130L123.89,2c0.04,0,0.07,0,0.11,0c70.22,0,128,57.78,128,128c0,21.7-5.52,43.04-16.03,62.02L124,130z"/>
+                </svg>
+              </div>
+              <input type="text" id="routine-time-input" autocomplete="off" placeholder="Time amount" value="">
+
+
+            </div>
+            <div class="description-inp inp">
+              <div class="description-icon div-icon">
+                <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#3484F0;}
+                  </style>
+                  <path class="st0" d="M23.04,47.52H6.67c-2.75,0-5-2.25-5-5V26.15c0-2.75,2.25-5,5-5h16.37c2.75,0,5,2.25,5,5v16.37
+                  	C28.04,45.27,25.79,47.52,23.04,47.52z"/>
+                  <path class="st0" d="M170.22,47.52H44.44c-2.75,0-5-2.25-5-5V26.15c0-2.75,2.25-5,5-5h125.78c2.75,0,5,2.25,5,5v16.37
+                  	C175.22,45.27,172.97,47.52,170.22,47.52z"/>
+                  <path class="st0" d="M23.04,94.85H6.67c-2.75,0-5-2.25-5-5V73.48c0-2.75,2.25-5,5-5h16.37c2.75,0,5,2.25,5,5v16.37
+                  	C28.04,92.6,25.79,94.85,23.04,94.85z"/>
+                  <path class="st0" d="M221.11,94.85H44.44c-2.75,0-5-2.25-5-5V73.48c0-2.75,2.25-5,5-5h176.67c2.75,0,5,2.25,5,5v16.37
+                  	C226.11,92.6,223.86,94.85,221.11,94.85z"/>
+                  <path class="st0" d="M23.04,140.18H6.67c-2.75,0-5-2.25-5-5v-16.37c0-2.75,2.25-5,5-5h16.37c2.75,0,5,2.25,5,5v16.37
+                  	C28.04,137.93,25.79,140.18,23.04,140.18z"/>
+                  <path class="st0" d="M205.17,140.18H44.44c-2.75,0-5-2.25-5-5v-16.37c0-2.75,2.25-5,5-5h160.72c2.75,0,5,2.25,5,5v16.37
+                  	C210.17,137.93,207.92,140.18,205.17,140.18z"/>
+                  <path class="st0" d="M23.04,187.68H6.67c-2.75,0-5-2.25-5-5v-16.37c0-2.75,2.25-5,5-5h16.37c2.75,0,5,2.25,5,5v16.37
+                  	C28.04,185.43,25.79,187.68,23.04,187.68z"/>
+                  <path class="st0" d="M249.67,187.68H44.44c-2.75,0-5-2.25-5-5v-16.37c0-2.75,2.25-5,5-5h205.22c2.75,0,5,2.25,5,5v16.37
+                  	C254.67,185.43,252.42,187.68,249.67,187.68z"/>
+                  <path class="st0" d="M23.04,232.85H6.67c-2.75,0-5-2.25-5-5v-16.37c0-2.75,2.25-5,5-5h16.37c2.75,0,5,2.25,5,5v16.37
+                  	C28.04,230.6,25.79,232.85,23.04,232.85z"/>
+                  <path class="st0" d="M164.33,232.85H44.44c-2.75,0-5-2.25-5-5v-16.37c0-2.75,2.25-5,5-5h119.89c2.75,0,5,2.25,5,5v16.37
+                  	C169.33,230.6,167.08,232.85,164.33,232.85z"/>
+                </svg>
+              </div>
+              <textarea id="routine-hint-input" form="new-task-form" name="name"  cols="20" placeholder="Additional info"></textarea>
+
+
+            </div>
+            <div class="time-inp inp">
+              <div class="time-icon div-icon">
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#3484F0;}
+                  	.st1{fill:none;stroke:#3484F0;stroke-width:20;stroke-linecap:round;stroke-miterlimit:10;}
+                  </style>
+                  <g>
+                  	<path class="st0" d="M128,20c28.85,0,55.97,11.23,76.37,31.63S236,99.15,236,128s-11.23,55.97-31.63,76.37S156.85,236,128,236
+                  		s-55.97-11.23-76.37-31.63S20,156.85,20,128s11.23-55.97,31.63-76.37S99.15,20,128,20 M128,0C57.31,0,0,57.31,0,128
+                  		s57.31,128,128,128s128-57.31,128-128S198.69,0,128,0L128,0z"/>
+                  </g>
+                  <g>
+                  	<line class="st1" x1="128" y1="134" x2="128" y2="67.67"/>
+                  </g>
+                  <line class="st1" x1="128" y1="134" x2="192.27" y2="134"/>
+                </svg>
+              </div>
+              <input type="number" id="routine-hour-input" min="5" max="22" value="" placeholder="12">
+              <input type="number" id="routine-minute-input" min="0" max="60" value="" placeholder="30">
+
+
+            </div>
+            <div class="calendar-inp inp">
+              <div class="calendar-icon div-icon">
+                <svg version="1.1" id="Layer_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#3484F0;}
+                  	.st1{fill:none;stroke:#3484F0;stroke-width:21.7995;stroke-linecap:round;stroke-miterlimit:10;}
+                  	.st2{fill:none;stroke:#3484F0;stroke-width:30.5192;stroke-linecap:square;stroke-miterlimit:10;}
+                  </style>
+                  <g>
+                  	<path class="st0" d="M216.33,47.87c9.85,0,17.87,8.02,17.87,17.87v144.11c0,9.85-8.02,17.87-17.87,17.87H39.67
+                  		c-9.85,0-17.87-8.02-17.87-17.87V65.74c0-9.85,8.02-17.87,17.87-17.87H216.33 M216.33,26.07H39.67C17.85,26.07,0,43.92,0,65.74
+                  		v144.11c0,21.82,17.85,39.67,39.67,39.67h176.67c21.82,0,39.67-17.85,39.67-39.67V65.74C256,43.92,238.15,26.07,216.33,26.07
+                  		L216.33,26.07z"/>
+                  </g>
+                  <line class="st1" x1="77.5" y1="78.27" x2="77.5" y2="16.98"/>
+                  <line class="st2" x1="74.71" y1="127.44" x2="80.28" y2="127.44"/>
+                  <line class="st2" x1="74.71" y1="175.16" x2="80.28" y2="175.16"/>
+                  <line class="st2" x1="126.3" y1="127.44" x2="131.88" y2="127.44"/>
+                  <line class="st2" x1="126.3" y1="175.16" x2="131.88" y2="175.16"/>
+                  <line class="st2" x1="177.11" y1="127.44" x2="182.68" y2="127.44"/>
+                  <line class="st2" x1="177.11" y1="175.16" x2="182.68" y2="175.16"/>
+                  <line class="st1" x1="180.44" y1="78.27" x2="180.44" y2="16.98"/>
+                </svg>
+              </div>
+              <div class="inp-container">
+                <div class="week-inp">
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-mon" name="day" value="Mon">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">M</div>
+                  </div>
+                  <!-- <label for="#routine_mon">M</label> -->
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-tue" name="day" value="Tue">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">T</div>
+                  </div>
+                  <!-- <label for="Tue">T</label> -->
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-wed" name="day" value="Wed">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">W</div>
+                  </div>
+                  <!-- <label for="Wed">W</label> -->
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-thu" name="day" value="Thu">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">T</div>
+                  </div>
+                  <!-- <label for="Thu">T</label> -->
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-fri" name="day" value="Fri">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">F</div>
+                  </div>
+                  <!-- <label for="Fri">F</label> -->
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-sat" name="day" value="Sat">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">S</div>
+                  </div>
+                  <!-- <label for="Sat">S</label> -->
+                  <div class="day-radio-input">
+                    <input type="radio" id="routine-sun" name="day" value="Sun">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">S</div>
+                  </div>
+                  <!-- <label for="Sun">S</label> -->
+                </div>
+
+                <div class="tdg-inp">
+                  <div class="tdg-radio-input">
+                    <input type="radio" id="todo-year" name="todo" value="Year">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">Y</div>
+                  </div>
+                  <div class="tdg-radio-input">
+                    <input type="radio" id="todo-month" name="todo" value="Mon">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">M</div>
+                  </div>
+                  <div class="tdg-radio-input">
+                    <input type="radio" id="todo-week" name="todo" value="Week">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">W</div>
+                  </div>
+                  <div class="tdg-radio-input">
+                    <input type="radio" id="todo-day" name="todo" value="Day">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">D</div>
+                  </div>
+                  <div class="tdg-radio-input">
+                    <input type="radio" id="todo-remember" name="todo" value="Rem">
+                    <div class="radio-back"></div>
+                    <div class="routine-label">R</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <input type="submit" id="new-task-submit" value="Add task">
+            <input type="button" id="new-todo" value="Add task">
+          </form>
+        </div>
+        <div class="l-routine-settings">
+
+        </div>
+      </div>
+
+      <!-- <div>
+        <div class="am5">
+          <p>5am</p>
+        </div>
+        <div class="am6">
+          <p>6am</p>
+        </div>
+        <div class="am7">
+          <p>7am</p>
+        </div>
+        <div class="am8">
+          <p>8am</p>
+        </div>
+        <div class="am9">
+          <p>9am</p>
+        </div>
+        <div class="am10">
+          <p>10am</p>
+        </div>
+        <div class="am11">
+          <p>11am</p>
+        </div>
+        <div class="pm12">
+          <p>12pm</p>
+        </div>
+        <div class="pm1">
+          <p>1pm</p>
+        </div>
+        <div class="pm2">
+          <p>2pm</p>
+        </div>
+        <div class="pm3">
+          <p>3pm</p>
+        </div>
+        <div class="pm4">
+          <p>4pm</p>
+        </div>
+        <div class="pm5">
+          <p>5pm</p>
+        </div>
+        <div class="pm6">
+          <p>6pm</p>
+        </div>
+        <div class="pm7">
+          <p>7pm</p>
+        </div>
+        <div class="pm8">
+          <p>8pm</p>
+        </div>
+        <div class="pm9">
+          <p>9pm</p>
+        </div>
+        <div class="pm10">
+          <p>10pm</p>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="right-side" id="rightSide">
+
+      <div id="top-page" class="top-page"></div>
+      <div class="r-time">
+        <div>5:00am</div>
+        <div>6:00am</div>
+        <div>7:00am</div>
+        <div>8:00am</div>
+        <div>9:00am</div>
+        <div>10:00am</div>
+        <div>11:00am</div>
+        <div>12:00pm</div>
+        <div>1:00pm</div>
+        <div>2:00pm</div>
+        <div>3:00pm</div>
+        <div>4:00pm</div>
+        <div>5:00pm</div>
+        <div>6:00pm</div>
+        <div>7:00pm</div>
+        <div>8:00pm</div>
+        <div>9:00pm</div>
+        <div>10:00pm</div>
+        <div><!--11:00pm --></div>
+      </div>
+      <div class="lines">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <!-- <div></div> -->
+      </div>
+      <div class="schedule">
+        <div class="mon" id="monday">
+          <div class="top-writing">
+            MONDAY
+          </div>
+
+          <input type="radio" id="routine-full-t" name="routine-f" value="Tru" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(2 * (100% / 19));">
+          <div class="routine" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(2 * (100% / 19)); --routineColour: var(--blue);">
+            <div class="routine-back"></div>
+            <!-- <input class="todo-div-cb" type="checkbox" name="" value=""> -->
+
+            <!-- <div class="routine-time"> 6AM - 7AM</div> -->
+            <input class="routine-time opac01"  type="text" name="" value="6AM - 7AM">
+            <div class="edit-time">
+              <input type="number" id="edit-hour-input" min="5" max="22" value="12">
+              <input type="number" id="edit-minute-input" min="0" max="60" value="30">
+              <input type="number" id="edit-time-input" min="0" max="1080" placeholder="Time amount (min)">
+            </div>
+            <!-- <div class="routine-p">Yeye</div> -->
+            <P class="routine-p ">Yeye</P>
+            <textarea class="routine-p-text" type="text" name="" value="" rows="1">Yeye</textarea>
+            <div class="r-top"></div>
+            <div class="routine-hint">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, possimus, iure. Doloremque quos repudiandae nesciunt debitis, nobis rerum hic, sunt repellendus autem quidem maiores odio culpa deserunt libero minus quisquam ducimus? Blanditiis aut, vitae sed eum veritatis tempore autem ducimus fugit ex. Aut, aliquid illum error ex id enim quasi.
+              </p>
+              <textarea  class="routine-hint-input-text" type="text" name="" value="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, possimus, iure. Doloremque quos repudiandae nesciunt debitis, nobis rerum hic, sunt repellendus autem quidem maiores odio culpa deserunt libero minus quisquam ducimus? Blanditiis aut, vitae sed eum veritatis tempore autem ducimus fugit ex. Aut, aliquid illum error ex id enim quasi.
+              </textarea>
+
+            </div>
+            <div class="routine-edit-icon">
+              <svg version="1.1" id="Layer_Edit" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <path d="M349.1,73.62L87.29,335.43c-1.32,1.32-2.19,3.02-2.5,4.86l-15,90.29c-0.99,5.94,4.05,11.14,10.01,10.34l93.08-12.43
+                	c1.95-0.26,3.75-1.15,5.14-2.54l261.7-261.7c3.5-3.5,3.5-9.16,0-12.66l-77.96-77.96C358.26,70.13,352.59,70.13,349.1,73.62z
+                	 M153.51,396.01l-32.27,4.31c-5.97,0.8-11-4.4-10.01-10.34l5.19-31.17c0.31-1.84,1.18-3.54,2.5-4.86L289.17,183.7
+                	c3.5-3.5,9.16-3.5,12.66,0l26.97,26.97c3.5,3.5,3.5,9.16,0,12.66L158.66,393.47C157.27,394.86,155.46,395.75,153.51,396.01z
+                	 M327.11,145.75l25.49-25.49c3.5-3.5,9.16-3.5,12.66,0l26.97,26.97c3.5,3.5,3.5,9.16,0,12.66l-25.49,25.49
+                	c-3.5,3.5-9.16,3.5-12.66,0l-26.97-26.97C323.61,154.92,323.61,149.25,327.11,145.75z"/>
+              </svg>
+
+            </div>
+            <div class="routine-delete-icon">
+              <svg version="1.1" id="Layer_Delete" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path d="M375.57,189.08L355.96,432.8c-0.38,4.63-4.24,8.2-8.89,8.2H148.69c-4.65,0-8.52-3.57-8.89-8.2l-19.61-243.72
+                	c-0.36-4.41,2.57-8.41,6.88-9.41l21.32-4.92c5.27-1.21,10.4,2.51,10.89,7.89l19.24,214.43c0.41,4.6,4.26,8.12,8.88,8.12h120.95
+                	c4.62,0,8.47-3.52,8.88-8.12l19.25-214.43c0.48-5.38,5.61-9.1,10.88-7.89l21.32,4.92C372.99,180.67,375.92,184.67,375.57,189.08z"/>
+                <path d="M395.8,118.74h-82.61c-2.41,0-4.34-2-4.25-4.41l1.44-38.92c0.08-2.41-1.85-4.41-4.26-4.41H189.63c-2.41,0-4.34,2-4.25,4.41
+                	l1.43,38.92c0.09,2.41-1.84,4.41-4.25,4.41H99.95c-2.35,0-4.25,1.91-4.25,4.26v24.31c0,2.35,1.9,4.25,4.25,4.25H395.8
+                	c2.35,0,4.25-1.9,4.25-4.25V123C400.05,120.65,398.15,118.74,395.8,118.74z M279.21,114.49c0,2.35-1.91,4.25-4.26,4.25H220.8
+                	c-2.35,0-4.25-1.9-4.25-4.25v-6.41c0-2.35,1.9-4.26,4.25-4.26h54.15c2.35,0,4.26,1.91,4.26,4.26V114.49z"/>
+              </svg>
+            </div>
+            <input id="button-edit" type="button" name="btn-edit" value="">
+            <input id="button-delete" type="button" name="btn-delete" value="">
+            <div class="close-routine-icon">
+              <div class="left-x"></div>
+              <div class="right-x"></div>
+            </div>
+          </div>
+
+          <input type="radio" id="routine-full-t" name="routine-f" value="Tru" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(4 * (100% / 19));">
+          <div class="routine" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(4 * (100% / 19)); --routineColour: lightblue;">
+            yeye
+          </div>
+
+
+          <input type="radio" id="routine-full-f-mon" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+        </div>
+        <div class="tue" id="tuesday">
+          <div class="top-writing">
+            TUESDAY
+          </div>
+
+          <input type="radio" id="routine-full-t" name="routine-f" value="Tru" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(4 * (100% / 19));">
+          <div class="routine" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(4 * (100% / 19)); --routineColour: lightblue;">
+            yeye
+          </div>
+          <input type="radio" id="routine-full-f-tue" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+
+        </div>
+        <div class="wed" id="wednesday">
+          <div class="top-writing">
+            WEDNESDAY
+          </div>
+          <input type="radio" id="routine-full-t" name="routine-f" value="Tru" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(4 * (100% / 19));">
+          <div class="routine" style="--routineHeight: calc(1 * (100% / 19)); --routineTop: calc(4 * (100% / 19)); --routineColour: lightblue;">
+            yeye
+          </div>
+          <input type="radio" id="routine-full-f-wed" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+        </div>
+        <div class="thu" id="thursday">
+          <div class="top-writing">
+            THURSDAY
+          </div>
+          <input type="radio" id="routine-full-f-thu" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+        </div>
+        <div class="fri" id="friday">
+          <div class="top-writing">
+            FRIDAY
+          </div>
+          <input type="radio" id="routine-full-f-fri" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+        </div>
+        <div class="sat" id="saturday">
+          <div class="top-writing">
+            SATURDAY
+          </div>
+          <input type="radio" id="routine-full-f-sat" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+        </div>
+        <div class="sun" id="sunday">
+          <div class="top-writing">
+            SUNDAY
+          </div>
+          <input type="radio" id="routine-full-f-sun" class="routine-full-f" name="routine-f" value="Fls" checked="true">
+        </div>
+
+        <div class="gradient-fade">
+          <div class="grd-left"></div>
+          <div class="grd-right"></div>
+        </div>
+      </div>
+
+      <div class="todo" id="goals">
+        <div class="todoPage" id="todo-page"></div>
+
+        <div class="todo-writing">
+          <div class="todo-p1">Goals</div>
+          <!-- <div class="todo-back"></div> -->
+          <div class="todo-p2">To do</div>
+          <div class="todo-front"></div>
+        </div>
+        <div class="todo-container">
+          <div class="todo-hidden">
+            .
+          </div>
+          <div class="todo-year">
+            <div class="year-text">Year</div>
+            <div class="year-divs" id="year-divs">
+              <div class="no-div">
+                <div class="todo-div-text">There are no elements in this section</div>
+              </div>
+              <input class="todo-radio" type="radio" name="todoDivs">
+              <div class="todo-div">
+                <textarea class="todo-div-text">To do list example</textarea>
+
+                <div class="todo-hint">
+                  <input class="todo-div-cb" type="checkbox" name="" value="">
+                  <div class="todo-hint-area">
+                    <p>YUUUUUUUUUUUUUUUYUUUUUUUUUUUUUUU</p>
+                    <textarea class="todo-hint-text" type="text"></textarea>
+                  </div>
+                  <div class="todo-buttons">
+                    <div class="todo-edit">
+                      <svg version="1.1" id="Layer_Edit" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M349.1,73.62L87.29,335.43c-1.32,1.32-2.19,3.02-2.5,4.86l-15,90.29c-0.99,5.94,4.05,11.14,10.01,10.34l93.08-12.43
+                        	c1.95-0.26,3.75-1.15,5.14-2.54l261.7-261.7c3.5-3.5,3.5-9.16,0-12.66l-77.96-77.96C358.26,70.13,352.59,70.13,349.1,73.62z
+                        	 M153.51,396.01l-32.27,4.31c-5.97,0.8-11-4.4-10.01-10.34l5.19-31.17c0.31-1.84,1.18-3.54,2.5-4.86L289.17,183.7
+                        	c3.5-3.5,9.16-3.5,12.66,0l26.97,26.97c3.5,3.5,3.5,9.16,0,12.66L158.66,393.47C157.27,394.86,155.46,395.75,153.51,396.01z
+                        	 M327.11,145.75l25.49-25.49c3.5-3.5,9.16-3.5,12.66,0l26.97,26.97c3.5,3.5,3.5,9.16,0,12.66l-25.49,25.49
+                        	c-3.5,3.5-9.16,3.5-12.66,0l-26.97-26.97C323.61,154.92,323.61,149.25,327.11,145.75z"/>
+                      </svg>
+                    </div>
+                    <div class="todo-delete">
+                      <svg version="1.1" id="Layer_Delete" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <path d="M375.57,189.08L355.96,432.8c-0.38,4.63-4.24,8.2-8.89,8.2H148.69c-4.65,0-8.52-3.57-8.89-8.2l-19.61-243.72
+                        	c-0.36-4.41,2.57-8.41,6.88-9.41l21.32-4.92c5.27-1.21,10.4,2.51,10.89,7.89l19.24,214.43c0.41,4.6,4.26,8.12,8.88,8.12h120.95
+                        	c4.62,0,8.47-3.52,8.88-8.12l19.25-214.43c0.48-5.38,5.61-9.1,10.88-7.89l21.32,4.92C372.99,180.67,375.92,184.67,375.57,189.08z"/>
+                        <path d="M395.8,118.74h-82.61c-2.41,0-4.34-2-4.25-4.41l1.44-38.92c0.08-2.41-1.85-4.41-4.26-4.41H189.63c-2.41,0-4.34,2-4.25,4.41
+                        	l1.43,38.92c0.09,2.41-1.84,4.41-4.25,4.41H99.95c-2.35,0-4.25,1.91-4.25,4.26v24.31c0,2.35,1.9,4.25,4.25,4.25H395.8
+                        	c2.35,0,4.25-1.9,4.25-4.25V123C400.05,120.65,398.15,118.74,395.8,118.74z M279.21,114.49c0,2.35-1.91,4.25-4.26,4.25H220.8
+                        	c-2.35,0-4.25-1.9-4.25-4.25v-6.41c0-2.35,1.9-4.26,4.25-4.26h54.15c2.35,0,4.26,1.91,4.26,4.26V114.49z"/>
+                      </svg>
+                    </div>
+                    <input id="todo-button-edit" type="button" name="todo-edit" value="">
+                    <input id="todo-button-delete" type="button" name="todo-delete" value="">
+                  </div>
+                </div>
+              </div>
+
+              <input class="todo-radio" type="radio" name="todoDivs">
+              <div class="todo-div">
+                <div class="todo-div-text">To do list example</div>
+                <div class="todo-hint">
+                  <input class="todo-div-cb" type="checkbox" name="" value="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="todo-month">
+            <div class="month-text">Month</div>
+            <div class="month-divs" id="month-divs">
+              <div class="no-div">
+                <div class="todo-div-text">There are no elements in this section</div>
+              </div>
+              <!-- <div class="todo-div"></div> -->
+            </div>
+          </div>
+          <div class="todo-week">
+            <div class="week-text">Week</div>
+            <div class="week-divs" id="week-divs">
+              <div class="no-div" id="no-divs">
+                <div class="todo-div-text">There are no elements in this section</div>
+              </div>
+              <!-- <php include('todoDiv.txt'); > -->
+            </div>
+          </div>
+          <div class="todo-day">
+            <div class="day-text">Day</div>
+            <div class="day-divs" id="day-divs">
+              <div class="no-div">
+                <div class="todo-div-text">There are no elements in this section</div>
+              </div>
+            </div>
+          </div>
+          <div class="todo-remember">
+            <div class="remember-text">To Remember</div>
+            <div class="remember-divs" id="remember-divs">
+              <div class="no-div">
+                <div class="todo-div-text">There are no elements in this section</div>
+              </div>
+            </div>
+          </div>
+          <input id="todo-radio-cb" class="todo-radio-cb" type="checkbox">
+          <input id="todo-radio-close" class="todo-radio-close" type="radio" checked="true" name="todoDivs">
+          <div class="close-todo-icon" id="close-todo-icon">
+            <div class="left-x"></div>
+            <div class="right-x"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-shadow-r">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
