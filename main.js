@@ -23,11 +23,11 @@ setTimeout(function(){
 //
 // window.onLoad = load();
 
-var shoppingPRBLM = 30;
+  var shoppingPRBLM = 30;
 
-const saveToLocalStorage = () =>{
+
   localStorage.setItem('shopping', shoppingPRBLM);
-}
+
 
 window.addEventListener('load', () => {
 
