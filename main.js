@@ -23,8 +23,10 @@ setTimeout(function(){
 //
 // window.onLoad = load();
 
+var shoppingPRBLM = 30;
+
 const saveToLocalStorage = () =>{
-  localStorage.setItem('shopping', "nah");
+  localStorage.setItem('shopping', shoppingPRBLM);
 }
 
 window.addEventListener('load', () => {
