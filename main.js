@@ -23,15 +23,17 @@ setTimeout(function(){
 //
 // window.onLoad = load();
 
-  var shoppingPRBLM = 30;
-
-
-  localStorage.setItem('shopping', shoppingPRBLM);
 
 
 window.addEventListener('load', () => {
 
 
+  
+  var shoppingPRBLM = 30;
+
+
+  localStorage.setItem('shopping', shoppingPRBLM);
+  
   const form = document.querySelector("#new-task-form");
   const input = document.querySelector("#routine-input");
   const input_colour = document.querySelector("#routine-colour-input");
